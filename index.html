@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="Aaradhy Sharma">
+        <meta name="description" content="A simple library made by Aaradhy Sharma">
+        <meta name="keywords" content="Library, Aaradhy Sharma">
+        <meta name="robots" content="index, follow">
+        <meta name="og:title" content="Simple Library">
+        <meta name="og:description" content="A simple Library made by Aaradhy Sharma">
+        <meta name="og:image" content="">
+        <meta name="og:url" content="https://aaradhy-sharma.github.io/top-library">
+        <meta name="og:site_name" content="Simple Library">
+        <meta name="og:type" content="website">
+        <meta name="og:locale" content="en_US">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Library</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+<body>
+    <header>
+        
+        <h1 class="heading">A Simple Library</h1>
+    </header>
+    <main>
+        <div class="btn-newButton">
+            <button class="newBook" id="newBook" data-newBook="">Add a Book</button>
+        </div>
+        <div class="div-form-container">
+        <form action="" class="input-form" id="input-form" data-newBookForm="">
+        <!-- <form action="" class="input-form" id="input-form" data-newBookForm="" style="display: none;"></form> -->
+            <div class="bookTitleInputBox">
+                <label for="input-bookTitle" class="label" id="bookTitleLabel" data-bookTitleLabel="">Book Title</label>
+                <input type="text" name="bookTitle" id="input-bookTitle" class="input-bookTitle" placeholder="Enter Book Title" data-input-bookTitle="" required>
+            </div>
+            <div class="authorInputBox">
+                <label for="input-Author" class="label" id="authorLabel" data-authorLabel="">Author</label>
+                <input type="text" name="author" id="input-Author" class="input-Author" placeholder="Enter the Author's Name" data-input-Author="" required>
+            </div>
+            <div class="pageCountInputBox">
+                <label for="pageCount" class="label" id="pageCountLabel" data-pageCountLabel="">Page Count</label>
+                <input type="number" name="pageCount" id="input-pageCount" class="input-pageCount" placeholder="Enter the number of pages" data-input-pageCount="" required>
+            </div>
+            <div class="readCheckInputBox">
+                <label for="readCheck" class="label" id="readCheckLabel" data-readCheckLabel="">Read</label>
+                <input type="checkbox" name="readCheck" id="input-readCheck" class="input-readCheck" data-input-readCheck="">
+            </div>
+            <div class="submitBtn">
+                <input type="submit" value="Add book" class="submit" id="submit" data-submitBtn="">
+            </div>
+        </form>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
