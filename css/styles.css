@@ -8,7 +8,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-image: url(../Assets/bg1.jpg);
+    background-image: url("https://github.com/Aaradhy-Sharma/top-library/blob/main/Assets/bg1.jpg?raw=true");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -194,7 +194,7 @@ body{
 
 .libraryBooks{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease-in-out;
@@ -249,4 +249,15 @@ body{
     font-weight: 500;
     margin: 10px;
     color: rgba(18, 17, 17, 0.83);
+}
+
+.removeBtn{
+    background-color: rgba(233, 229, 229, 0.537);
+    border: 1px solid white;
+    border-radius: 40px;
+    padding: 10px 20px;
+    margin: 10px 10px;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    cursor: pointer;
 }
