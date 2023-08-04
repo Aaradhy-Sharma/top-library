@@ -49,7 +49,15 @@ function render_books(){
         let bookAuthor = document.createElement('h3');
         let bookPages = document.createElement('h4');
         let bookRead = document.createElement('h5');
-    
+        let removeBtn = document.createElement('button');
+        removeBtn.classList.add('removeBtn');
+        removeBtn.textContent = 'Remove';
+        bookDiv.appendChild(removeBtn);
+        removeBtn.addEventListener('click', () => {
+            console.log('remove button clicked');
+            myLibrary.splice(i, 1);
+            render_books();
+        })
 
         bookDiv.classList.add('book');
         bookTitle.classList.add('bookTitle');
@@ -67,7 +75,7 @@ function render_books(){
         bookAuthor.textContent = currentBook.author;
         bookPages.textContent = currentBook.pages;
         bookRead.textContent = currentBook.read;
-        
+
         bookTitle.innerHTML = '<span class="book-label">Title:</span> ' + currentBook.title;
         bookAuthor.innerHTML = '<span class="book-label">Author:</span> ' + currentBook.author;
         bookPages.innerHTML = '<span class="book-label">Pages:</span> ' + currentBook.pages;
